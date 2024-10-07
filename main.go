@@ -246,7 +246,7 @@ func parseSQL(sql string) ([]SQLNode, error) {
 			if i+2 < len(tokens) {
 				node.Left = strings.ToUpper(tokens[i])
 				node.Operator = tokens[i+1]
-				node.Right = strings.ToUpper(tokens[i+2])
+				node.Right = tokens[i+2]
 				node.Right = strings.Trim(node.Right, "'")
 				i += 3
 			}

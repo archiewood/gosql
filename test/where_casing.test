@@ -1,0 +1,4 @@
+FROM data/addresses WHERE FIRST_NAME = 'John'
+---
+FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP
+John, Doe, 120 jefferson st., Riverside,  NJ,  08075
