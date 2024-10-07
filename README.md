@@ -4,7 +4,7 @@ A basic SQL query engine in Go
 - It can parse and execute simple SQL queries on CSV files
 - Supports SELECT, FROM, WHERE, and LIMIT clauses.
 
-![Terminal Demo](img/terminal.mp4)
+![Terminal Demo](img/terminal.gif)
 
 ## Architecture
 
