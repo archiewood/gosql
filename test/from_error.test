@@ -1,0 +1,3 @@
+SELECT * FROM data/does_not_exist
+---
+Error executing query: file 'data/does_not_exist.csv' not found

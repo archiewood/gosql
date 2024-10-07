@@ -1,0 +1,11 @@
+FROM data/wait_times WHERE max=30
+---
+OFFICE, MAX, MIN
+ABQ, 30, 15.5
+CHR, 30, 15.5
+FSA, 30, 15.5
+IMP, 30, 15.5
+KAN, 30, 15
+KND, 30, 24.5
+MGA, 30, 29.5
+MTL, 30, 14.5

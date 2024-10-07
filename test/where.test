@@ -1,0 +1,5 @@
+SELECT FIRST_NAME, LAST_NAME FROM data/addresses WHERE STATE = ' NJ'
+---
+FIRST_NAME, LAST_NAME
+John, Doe
+John "Da Man", Repici

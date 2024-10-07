@@ -1,0 +1,9 @@
+SELECT FIRST_NAME, LAST_NAME FROM data/addresses
+---
+FIRST_NAME, LAST_NAME
+John, Doe
+Jack, McGinnis
+John "Da Man", Repici
+Stephen, Tyler
+, Blankman
+Joan "the bone", Anne, Jet
