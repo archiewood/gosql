@@ -41,8 +41,8 @@ An AST is an Abstract Syntax Tree. It is a tree representation of the structure 
 1. Ensure you have Go installed on your system.
 2. Clone this repository:
    ```bash
-   git clone https://github.com/archiewood/sql.git
-   cd sql
+   git clone https://github.com/archiewood/gosql.git
+   cd gosql
    ```
 3. Build the project:
    ```bash
@@ -54,13 +54,13 @@ An AST is an Abstract Syntax Tree. It is a tree representation of the structure 
 Run the program with your SQL query as an argument:
 
 ```bash
-./sql "SELECT column1, column2 FROM table WHERE column3 = 'value' LIMIT 10"
+./gosql "SELECT column1, column2 FROM table WHERE column3 = 'value' LIMIT 10"
 ```
 
 The program expects CSV files to be relative to the directory from which you run the program, named as `<table>.csv`. You can use unix paths eg 
 
 ```bash
-./sql "SELECT * FROM data/wait_times"
+./gosql "SELECT * FROM data/wait_times"
 ```
 
 ### Flags
@@ -69,7 +69,7 @@ The program expects CSV files to be relative to the directory from which you run
 
 Example:
 ```bash
-./sql -ast "SELECT * FROM users WHERE country = 'USA' LIMIT 5"
+./gosql -ast "SELECT * FROM users WHERE country = 'USA' LIMIT 5"
 ```
 
 ## Friendly Syntax
