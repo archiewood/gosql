@@ -1,8 +1,38 @@
-# Simple SQL Query Engine
+# GoSQL
 
-A basic SQL query engine in Go. 
+A basic SQL query engine in Go 
 - It can parse and execute simple SQL queries on CSV files
 - Supports SELECT, FROM, WHERE, and LIMIT clauses.
+
+## Architecture
+
+The program is simple:
+```mermaid
+graph LR
+    A[Parse Query] --> B[Create AST]
+    B --> C[Execute Query against CSV]
+    C --> D[Output Results]
+```
+
+An AST is an Abstract Syntax Tree. It is a tree representation of the structure of the SQL query, eg
+
+```json
+{
+    "type": "SELECT",
+    "value": ["first_name", "last_name"]
+},
+{
+    "type": "FROM",
+    "value": "data/addresses"
+},
+{
+    "type": "WHERE",
+    "left": "first_name",
+    "operator": "=",
+    "right": "John"
+}
+```
+
 
 ## Installation
 
