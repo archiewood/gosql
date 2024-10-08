@@ -33,7 +33,7 @@ func main() {
 
 	// Check if we have the correct number of arguments
 	if flag.NArg() != 1 {
-		fmt.Println("Usage: go run main.go [-ast] \"SQL QUERY\"")
+		fmt.Println("Usage: ./gosql [-ast] \"SQL QUERY\"")
 		fmt.Println("SELECT, FROM, WHERE, and LIMIT are supported.")
 		return
 	}
